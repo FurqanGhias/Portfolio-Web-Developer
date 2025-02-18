@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Furqan Ghias - Web Developer Portfolio</title>
   <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
       --primary-color: #1e3c72;
@@ -86,8 +86,22 @@
       border-bottom: 3px solid var(--secondary-color);
       display: inline-block;
       padding-bottom: 5px;
+      margin-bottom: 20px;
     }
-    /* Projects */
+    section p {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      color: var(--text-light);
+    }
+    /* About Section */
+    #about {
+      text-align: center;
+    }
+    #about p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+    /* Projects Grid */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -108,10 +122,12 @@
     .project-card h3 {
       color: var(--primary-color);
       margin-bottom: 12px;
+      font-size: 1.8rem;
     }
     .project-card p {
       font-size: 1rem;
       color: var(--text-light);
+      margin-bottom: 15px;
     }
     .project-card .btn {
       background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
@@ -123,6 +139,23 @@
     }
     .project-card .btn:hover {
       background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    }
+    /* Skills */
+    .skills-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+    .skills-list li {
+      margin: 10px 0;
+      padding: 12px;
+      border-left: 4px solid var(--secondary-color);
+      background: #f9f9f9;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      font-size: 1.1rem;
+    }
+    .skills-list li:hover {
+      background: #eaf4fc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     /* Contact */
     .contact-info {
@@ -175,42 +208,182 @@
 <body>
   <header>
     <h1>Furqan Ghias</h1>
-    <p>Web Developer | WordPress & Shopify Specialist</p>
+    <p>Web Developer | WordPress &amp; Shopify Specialist</p>
   </header>
   <nav>
+    <a href="#about">About</a>
     <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
+  <section id="about">
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p>Hello! I'm Furqan Ghias, a passionate web developer with a knack for creating visually stunning and highly functional websites. My journey began as a self-taught coder, and over the years, I've honed my skills to specialize in WordPress, Shopify, and custom web development.</p>
+    <p>I believe that every website should tell a story. Whether it's an e-commerce platform or a corporate website, my goal is to blend creativity with technology to deliver engaging and responsive experiences. I take pride in crafting websites that not only look great but also perform exceptionally well.</p>
+    <p>When I'm not coding, you'll find me exploring the latest design trends, refining my skills, or enjoying a good cup of coffee while brainstorming new ideas. Let's work together to bring your vision to life!</p>
+  </section>
   <section id="projects">
     <h2><i class="fas fa-code"></i> Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
         <h3>Code Buildz</h3>
-        <p>A modern web development agency site with an interactive UI.</p>
-        <a href="https://codebuildz.com/" target="_blank" class="btn">Visit</a>
+        <p>A modern web development agency website featuring interactive UI, responsive design, and smooth animations.</p>
+        <a href="https://codebuildz.com/" target="_blank" class="btn">Visit Website</a>
       </div>
       <div class="project-card">
         <h3>Code Invokers</h3>
-        <p>Innovative tech solutions provider with a sleek design.</p>
-        <a href="https://codeinvokers.com/" target="_blank" class="btn">Visit</a>
+        <p>An innovative tech solutions provider site built with a clean design and seamless navigation, showcasing expertise in presenting complex data.</p>
+        <a href="https://codeinvokers.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Code Graphers</h3>
+        <p>A creative agency website utilizing dynamic elements and engaging visuals that merge artistic flair with technical excellence.</p>
+        <a href="http://code-graphers.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Alif Alpha</h3>
+        <p>A business solutions website designed to blend functionality with modern aesthetics, featuring intuitive navigation and custom animations.</p>
+        <a href="https://alifalpha.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Alpha Saura</h3>
+        <p>A digital marketing agency site emphasizing immersive user experiences through fluid transitions and engaging content.</p>
+        <a href="https://alphasaura.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Qist Market</h3>
+        <p>An e-commerce platform crafted to streamline online shopping with a clean design, robust functionality, and a focus on user convenience.</p>
+        <a href="https://qistmarket.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Ibna Zeeem Shah Dawakhana</h3>
+        <p>An online pharmacy website combining easy navigation with a secure interface, emphasizing accessibility and user trust.</p>
+        <a href="https://ibnazeemshahdawakhana.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Vintagiou</h3>
+        <p>A vintage e-commerce store that marries classic aesthetics with modern functionality, evoking nostalgia while ensuring a seamless shopping experience.</p>
+        <a href="https://vintagiou.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Future Style</h3>
+        <p>A Shopify-based fashion store combining trendy visuals with smooth navigation, reflecting modern fashion sensibilities.</p>
+        <a href="https://futurestyle.pk/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Prime Meat</h3>
+        <p>A dynamic Shopify store for meat delivery services, featuring secure checkout and a user-friendly interface to streamline purchasing.</p>
+        <a href="https://primemeat.ae/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>AWA Secrets</h3>
+        <p>A beauty and wellness Shopify store crafted with attention to detail, offering a serene design and intuitive layout for a delightful shopping experience.</p>
+        <a href="https://awasecrets.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Sansa</h3>
+        <p>A fashion-forward Shopify store that merges modern design with robust functionality, ensuring an engaging and visually stimulating user experience.</p>
+        <a href="https://sansa.pk/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Dream On</h3>
+        <p>A lifestyle-oriented Shopify store designed with inspirational aesthetics and intuitive navigation for a delightful online shopping experience.</p>
+        <a href="https://dreamon.pk/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Car Chop Need</h3>
+        <p>An automotive Shopify store tailored for car enthusiasts with a sleek interface and streamlined functionality for smooth browsing and shopping.</p>
+        <a href="https://carchopneed.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Soft Textiles</h3>
+        <p>A home goods Shopify store that combines elegance with practicality, featuring clean aesthetics and user-friendly navigation.</p>
+        <a href="https://softtextiles.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Al Aira School</h3>
+        <p>An educational institution website showcasing academic excellence with an interactive design that supports students, parents, and educators.</p>
+        <a href="https://alairaschool.edu.pk/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Al Mudassar Foundation</h3>
+        <p>A non-profit organization website focused on community service with an engaging layout and clear resource pathways to drive social impact.</p>
+        <a href="https://almudassarfoundation.org/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Willow by SK</h3>
+        <p>A modern business website that effectively communicates brand identity by blending creativity with professional functionality.</p>
+        <a href="https://willowbysk.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Smart Tech</h3>
+        <p>A tech solutions website integrating innovative design with robust features, ensuring a seamless experience as users explore cutting-edge technology.</p>
+        <a href="https://smarttech.pk/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Ciphers Lab</h3>
+        <p>A software development company website showcasing modern aesthetics and detailed project portfolios, emphasizing clarity and functionality.</p>
+        <a href="https://cipherslab.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Regalia House of Jewels</h3>
+        <p>A luxurious jewelry website highlighting exquisite craftsmanship with elegant design and refined details for a sophisticated shopping experience.</p>
+        <a href="https://regaliahouseofjewels.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Beast Nutrition</h3>
+        <p>An informative nutrition and supplements website built to provide detailed product insights and customer reviews, ensuring a user-friendly experience for health enthusiasts.</p>
+        <a href="https://beastnutrition.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>WTM Codex</h3>
+        <p>A tech blog diving into the latest industry trends and tutorials, featuring interactive elements and a modern design as a resource for tech enthusiasts.</p>
+        <a href="https://wtmcodex.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Devccelator</h3>
+        <p>A web development agency website merging creative design with functionality, complete with detailed project portfolios and client testimonials.</p>
+        <a href="https://www.devccelator.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>OV Career</h3>
+        <p>A career guidance portal designed to empower individuals with insights and expert advice, featuring a user-friendly layout for navigating professional pathways.</p>
+        <a href="https://ovcareer.com/" target="_blank" class="btn">Visit Website</a>
+      </div>
+      <div class="project-card">
+        <h3>Healthwise Pharmacy</h3>
+        <p>A UK-based pharmacy website that integrates secure e-commerce functionality with modern design, ensuring a seamless experience when accessing healthcare products.</p>
+        <a href="https://healthwisepharmacy.co.uk/" target="_blank" class="btn">Visit Website</a>
       </div>
     </div>
+  </section>
+  <section id="skills">
+    <h2><i class="fas fa-cogs"></i> Skills</h2>
+    <ul class="skills-list">
+      <li><strong>Web Development:</strong> HTML, CSS, JavaScript, WordPress, Shopify, PHP</li>
+      <li><strong>SEO &amp; Analytics:</strong> On-Page SEO, Technical SEO, Google Analytics, SEMrush</li>
+      <li><strong>Design &amp; Tools:</strong> Figma, Adobe XD, Sketch, Responsive Design</li>
+      <li><strong>Soft Skills:</strong> Communication, Teamwork, Problem Solving, Project Management</li>
+    </ul>
   </section>
   <section id="contact">
     <h2><i class="fas fa-envelope"></i> Contact</h2>
     <div class="contact-info">
-      <a href="mailto:furqancg22@gmail.com">furqancg22@gmail.com</a>
-      <a href="tel:+923320146342">+92 332 0146342</a>
+      <a href="mailto:furqancg22@gmail.com"><i class="fas fa-envelope"></i> furqancg22@gmail.com</a>
+      <a href="tel:+923320146342"><i class="fas fa-phone"></i> +92 332 0146342</a>
+      <a href="https://pk.linkedin.com/in/furqan-ghias-web-developer" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/FurqanGhias" target="_blank"><i class="fab fa-github"></i> GitHub</a>
     </div>
   </section>
   <footer>
     <p>&copy; <span id="year"></span> Furqan Ghias. All rights reserved.</p>
   </footer>
+  <div id="back-to-top"><i class="fas fa-chevron-up"></i></div>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
     const backToTop = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
-      backToTop.style.display = window.pageYOffset > 300 ? 'block' : 'none';
+      backToTop.style.display = window.pageYOffset > 300 ? 'flex' : 'none';
     });
     backToTop.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
