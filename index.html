@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furqan Ghias - Web Developer Portfolio</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #1e3c72;
+      --secondary-color: #2a5298;
+      --accent-color: #ffd700;
+      --bg-light: #f0f4f8;
+      --text-color: #333;
+      --text-light: #555;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(180deg, var(--bg-light), #ffffff);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    /* Header */
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: #fff;
+      padding: 70px 20px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    /* Navigation */
+    nav {
+      background: var(--secondary-color);
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      font-size: 1.1rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--accent-color);
+      transform: scale(1.05);
+    }
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      color: var(--primary-color);
+      font-size: 2.4rem;
+      border-bottom: 3px solid var(--secondary-color);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    .project-card h3 {
+      color: var(--primary-color);
+      margin-bottom: 12px;
+    }
+    .project-card p {
+      font-size: 1rem;
+      color: var(--text-light);
+    }
+    .project-card .btn {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .project-card .btn:hover {
+      background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    }
+    /* Contact */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-info a {
+      color: var(--primary-color);
+      font-size: 1.2rem;
+      margin: 10px 0;
+      transition: transform 0.3s ease;
+    }
+    .contact-info a:hover {
+      transform: scale(1.05);
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--primary-color);
+      color: #fff;
+      margin-top: 40px;
+    }
+    /* Back-to-Top Button */
+    #back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--primary-color);
+      color: #fff;
+      padding: 15px;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 1.5rem;
+      display: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #back-to-top:hover {
+      background: var(--secondary-color);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Furqan Ghias</h1>
+    <p>Web Developer | WordPress & Shopify Specialist</p>
+  </header>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="projects">
+    <h2><i class="fas fa-code"></i> Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Code Buildz</h3>
+        <p>A modern web development agency site with an interactive UI.</p>
+        <a href="https://codebuildz.com/" target="_blank" class="btn">Visit</a>
+      </div>
+      <div class="project-card">
+        <h3>Code Invokers</h3>
+        <p>Innovative tech solutions provider with a sleek design.</p>
+        <a href="https://codeinvokers.com/" target="_blank" class="btn">Visit</a>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2><i class="fas fa-envelope"></i> Contact</h2>
+    <div class="contact-info">
+      <a href="mailto:furqancg22@gmail.com">furqancg22@gmail.com</a>
+      <a href="tel:+923320146342">+92 332 0146342</a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; <span id="year"></span> Furqan Ghias. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = window.pageYOffset > 300 ? 'block' : 'none';
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
